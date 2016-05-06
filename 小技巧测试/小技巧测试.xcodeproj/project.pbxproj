@@ -16,6 +16,10 @@
 		04D7642C1CDC891E0028FB2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D7642A1CDC891E0028FB2D /* LaunchScreen.storyboard */; };
 		04D764371CDC891E0028FB2D /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D764361CDC891E0028FB2D /* _____Tests.m */; };
 		04D764421CDC891E0028FB2D /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D764411CDC891E0028FB2D /* _____UITests.m */; };
+		04FD0ECF1CDC8DCB0099E9B7 /* BOBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD0EC61CDC8DCB0099E9B7 /* BOBackView.m */; };
+		04FD0ED01CDC8DCB0099E9B7 /* ZYCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD0EC91CDC8DCB0099E9B7 /* ZYCircleProgressView.m */; };
+		04FD0ED11CDC8DCB0099E9B7 /* ZYCurveBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD0ECC1CDC8DCB0099E9B7 /* ZYCurveBackView.m */; };
+		04FD0ED21CDC8DCB0099E9B7 /* ZYCurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD0ECE1CDC8DCB0099E9B7 /* ZYCurveView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		04D7643D1CDC891E0028FB2D /* 小技巧测试UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "小技巧测试UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D764411CDC891E0028FB2D /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		04D764431CDC891E0028FB2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FD0EC51CDC8DCB0099E9B7 /* BOBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOBackView.h; sourceTree = "<group>"; };
+		04FD0EC61CDC8DCB0099E9B7 /* BOBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOBackView.m; sourceTree = "<group>"; };
+		04FD0EC81CDC8DCB0099E9B7 /* ZYCircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCircleProgressView.h; sourceTree = "<group>"; };
+		04FD0EC91CDC8DCB0099E9B7 /* ZYCircleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCircleProgressView.m; sourceTree = "<group>"; };
+		04FD0ECB1CDC8DCB0099E9B7 /* ZYCurveBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCurveBackView.h; sourceTree = "<group>"; };
+		04FD0ECC1CDC8DCB0099E9B7 /* ZYCurveBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCurveBackView.m; sourceTree = "<group>"; };
+		04FD0ECD1CDC8DCB0099E9B7 /* ZYCurveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCurveView.h; sourceTree = "<group>"; };
+		04FD0ECE1CDC8DCB0099E9B7 /* ZYCurveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCurveView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,9 @@
 		04D764181CDC891E0028FB2D /* 小技巧测试 */ = {
 			isa = PBXGroup;
 			children = (
+				04FD0EC41CDC8DCB0099E9B7 /* BOBackView */,
+				04FD0EC71CDC8DCB0099E9B7 /* ZYCircleProgressView */,
+				04FD0ECA1CDC8DCB0099E9B7 /* ZYCurveView */,
 				04D7641C1CDC891E0028FB2D /* AppDelegate.h */,
 				04D7641D1CDC891E0028FB2D /* AppDelegate.m */,
 				04D7641F1CDC891E0028FB2D /* ViewController.h */,
@@ -141,6 +156,35 @@
 				04D764431CDC891E0028FB2D /* Info.plist */,
 			);
 			path = "小技巧测试UITests";
+			sourceTree = "<group>";
+		};
+		04FD0EC41CDC8DCB0099E9B7 /* BOBackView */ = {
+			isa = PBXGroup;
+			children = (
+				04FD0EC51CDC8DCB0099E9B7 /* BOBackView.h */,
+				04FD0EC61CDC8DCB0099E9B7 /* BOBackView.m */,
+			);
+			path = BOBackView;
+			sourceTree = "<group>";
+		};
+		04FD0EC71CDC8DCB0099E9B7 /* ZYCircleProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				04FD0EC81CDC8DCB0099E9B7 /* ZYCircleProgressView.h */,
+				04FD0EC91CDC8DCB0099E9B7 /* ZYCircleProgressView.m */,
+			);
+			path = ZYCircleProgressView;
+			sourceTree = "<group>";
+		};
+		04FD0ECA1CDC8DCB0099E9B7 /* ZYCurveView */ = {
+			isa = PBXGroup;
+			children = (
+				04FD0ECB1CDC8DCB0099E9B7 /* ZYCurveBackView.h */,
+				04FD0ECC1CDC8DCB0099E9B7 /* ZYCurveBackView.m */,
+				04FD0ECD1CDC8DCB0099E9B7 /* ZYCurveView.h */,
+				04FD0ECE1CDC8DCB0099E9B7 /* ZYCurveView.m */,
+			);
+			path = ZYCurveView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +318,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D764211CDC891E0028FB2D /* ViewController.m in Sources */,
+				04FD0ECF1CDC8DCB0099E9B7 /* BOBackView.m in Sources */,
+				04FD0ED11CDC8DCB0099E9B7 /* ZYCurveBackView.m in Sources */,
+				04FD0ED21CDC8DCB0099E9B7 /* ZYCurveView.m in Sources */,
+				04FD0ED01CDC8DCB0099E9B7 /* ZYCircleProgressView.m in Sources */,
 				04D764271CDC891E0028FB2D /* _____.xcdatamodeld in Sources */,
 				04D7641E1CDC891E0028FB2D /* AppDelegate.m in Sources */,
 				04D7641B1CDC891E0028FB2D /* main.m in Sources */,
@@ -500,6 +548,7 @@
 				04D764481CDC891E0028FB2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04D764491CDC891E0028FB2D /* Build configuration list for PBXNativeTarget "小技巧测试Tests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +557,7 @@
 				04D7644B1CDC891E0028FB2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04D7644C1CDC891E0028FB2D /* Build configuration list for PBXNativeTarget "小技巧测试UITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +566,7 @@
 				04D7644E1CDC891E0028FB2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
