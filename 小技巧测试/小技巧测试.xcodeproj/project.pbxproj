@@ -20,6 +20,7 @@
 		04FD0ED01CDC8DCB0099E9B7 /* ZYCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD0EC91CDC8DCB0099E9B7 /* ZYCircleProgressView.m */; };
 		04FD0ED11CDC8DCB0099E9B7 /* ZYCurveBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD0ECC1CDC8DCB0099E9B7 /* ZYCurveBackView.m */; };
 		04FD0ED21CDC8DCB0099E9B7 /* ZYCurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD0ECE1CDC8DCB0099E9B7 /* ZYCurveView.m */; };
+		04FD0ED51CDC93A30099E9B7 /* CurveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD0ED41CDC93A30099E9B7 /* CurveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		04FD0ECC1CDC8DCB0099E9B7 /* ZYCurveBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCurveBackView.m; sourceTree = "<group>"; };
 		04FD0ECD1CDC8DCB0099E9B7 /* ZYCurveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCurveView.h; sourceTree = "<group>"; };
 		04FD0ECE1CDC8DCB0099E9B7 /* ZYCurveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCurveView.m; sourceTree = "<group>"; };
+		04FD0ED31CDC93A30099E9B7 /* CurveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurveViewController.h; sourceTree = "<group>"; };
+		04FD0ED41CDC93A30099E9B7 /* CurveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurveViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				04D7641D1CDC891E0028FB2D /* AppDelegate.m */,
 				04D7641F1CDC891E0028FB2D /* ViewController.h */,
 				04D764201CDC891E0028FB2D /* ViewController.m */,
+				04FD0ED31CDC93A30099E9B7 /* CurveViewController.h */,
+				04FD0ED41CDC93A30099E9B7 /* CurveViewController.m */,
 				04D764221CDC891E0028FB2D /* Main.storyboard */,
 				04D764281CDC891E0028FB2D /* Assets.xcassets */,
 				04D7642A1CDC891E0028FB2D /* LaunchScreen.storyboard */,
@@ -325,6 +330,7 @@
 				04D764271CDC891E0028FB2D /* _____.xcdatamodeld in Sources */,
 				04D7641E1CDC891E0028FB2D /* AppDelegate.m in Sources */,
 				04D7641B1CDC891E0028FB2D /* main.m in Sources */,
+				04FD0ED51CDC93A30099E9B7 /* CurveViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

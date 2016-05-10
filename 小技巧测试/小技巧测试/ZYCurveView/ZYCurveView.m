@@ -104,17 +104,6 @@
         NSLog(@"%.1f", curveHeight);
         self.curveLayer.path = self.curvePathRef;//需要重新赋值一次
         self.curveLayer.frame = CGRectMake(self.curveLayer.frame.origin.x - kCurveStep, 0, self.curveLayer.frame.size.width + kCurveStep, self.frame.size.height);
-        /*动画*/
-//        CABasicAnimation* animation = [CABasicAnimation animationWithKeyPath:@"position.x"];
-//        animation.fromValue = [NSNumber numberWithFloat:self.curveLayer.frame.origin.x];
-//        animation.toValue = [NSNumber numberWithFloat:self.curveLayer.frame.origin.x - kCurveStep];
-//        animation.duration = 0.2;
-//        [self.curveLayer addAnimation:animation forKey:nil];
-//        CATransition *animation = [CATransition animation];
-//        animation.delegate = self;
-//        animation.duration = 0.2;
-//        animation.timingFunction = UIViewAnimationCurveEaseIn;
-//        [self.layer addAnimation:animation forKey:@"animation"];
         
     }
 }
@@ -126,21 +115,6 @@
     CGPathMoveToPoint(self.curvePathRef, NULL, self.frame.size.width, self.frame.size.height / 2.0);
     
     self.curveLayer.path = self.curvePathRef;
-}
-
--(void)addAnimation{
-    CATransition *animation = [CATransition animation];
-    animation.duration = 0.3;
-    animation.timingFunction = UIViewAnimationCurveEaseInOut;
-    //    animation.type = @"pageCurl";
-    animation.type = kCATransitionMoveIn;
-    animation.subtype = kCATransitionFromRight;
-    [self.layer addAnimation:animation forKey:nil];
-}
-
--(void)layerAnimation{
-    
-
 }
 
 -(void)dealloc{
