@@ -68,7 +68,8 @@
     //    90 ～ 360    0 ～ actualEndAngle(实际结束角度)
     //    所有的值在(360 + actualEndAngle - 90)度的角度上均分  一个进度代表的角度
     NSInteger startEngle = 90;
-    NSInteger actualEndAngle = 80;
+//    NSInteger actualEndAngle = 80;//实际结束角度
+    NSInteger actualEndAngle = 89.9;
     CGFloat ava = (360 + actualEndAngle - startEngle) / 99.9f;
     CGFloat endAngle = startEngle + ava * _currentProgress;
     

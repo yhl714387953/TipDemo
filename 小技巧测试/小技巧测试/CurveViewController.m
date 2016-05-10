@@ -22,6 +22,11 @@
     // Do any additional setup after loading the view.
 }
 
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [self.timer invalidate];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -54,6 +59,11 @@
     }
     
     [self.curveView addValue:array];
+}
+
+-(void)dealloc{
+    NSLog(@"%@销毁了", self.class.description);
+    
 }
 
 
