@@ -37,7 +37,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxo-qp-XyR">
-                                <rect key="frame" x="147.5" y="446" width="80" height="30"/>
+                                <rect key="frame" x="147" y="446" width="80" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="U1V-Ka-inU"/>
                                     <constraint firstAttribute="height" constant="30" id="aZe-yX-M8E"/>
@@ -47,13 +47,27 @@
                                     <segue destination="BTv-ki-zHQ" kind="show" id="7Dk-SR-ppn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVY-EE-ivw">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.72549019609999998" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ttD-bD-MLL"/>
+                                </constraints>
+                                <state key="normal" title="超出superView能显示么"/>
+                                <connections>
+                                    <segue destination="gFI-gI-otX" kind="show" id="AQ7-m1-doo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7bX-h6-Rdg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ISV-On-iht"/>
+                            <constraint firstItem="sVY-EE-ivw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MaV-cT-Guh"/>
                             <constraint firstItem="7bX-h6-Rdg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="58" id="go7-HH-WIc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sVY-EE-ivw" secondAttribute="bottom" id="iXj-NU-SU1"/>
                             <constraint firstItem="oxo-qp-XyR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t63-Hf-66c"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oxo-qp-XyR" secondAttribute="bottom" constant="191" id="tKX-c5-DH5"/>
+                            <constraint firstAttribute="trailing" secondItem="sVY-EE-ivw" secondAttribute="trailing" id="vNT-S8-JJq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iyE-FB-tJI"/>
@@ -62,6 +76,89 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1266.5" y="340.5"/>
+        </scene>
+        <!--Delegate-->
+        <scene sceneID="spp-Zw-F0S">
+            <objects>
+                <viewController id="gFI-gI-otX" customClass="OutsideViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L07-Sg-Jbf"/>
+                        <viewControllerLayoutGuide type="bottom" id="RfA-KX-54j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hFw-nI-0cs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hBC-Tc-gtX" customClass="BOBackView">
+                                <rect key="frame" x="117" y="84" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="多个按钮容器视图" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeR-OA-4ib">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="QeR-OA-4ib" firstAttribute="top" secondItem="hBC-Tc-gtX" secondAttribute="top" id="ECm-Lm-n0w"/>
+                                    <constraint firstAttribute="height" constant="128" id="PCq-BG-4LT"/>
+                                    <constraint firstAttribute="trailing" secondItem="QeR-OA-4ib" secondAttribute="trailing" id="eFz-Kn-1PA"/>
+                                    <constraint firstAttribute="width" constant="240" id="rQj-rH-yab"/>
+                                    <constraint firstItem="QeR-OA-4ib" firstAttribute="leading" secondItem="hBC-Tc-gtX" secondAttribute="leading" id="uWA-sh-tV8"/>
+                                    <constraint firstAttribute="bottom" secondItem="QeR-OA-4ib" secondAttribute="bottom" id="xUt-jQ-5Jf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EsJ-uv-FX6" customClass="OutsideBackView">
+                                <rect key="frame" x="115" y="359" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="单个按钮容器视图" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L47-tU-h6n">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="4Qj-2z-MQq"/>
+                                    <constraint firstAttribute="width" constant="240" id="rUl-C3-Vkk"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="gFI-gI-otX" id="mmC-je-9EG"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="------------------------------------------------------" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXY-xk-G8z">
+                                <rect key="frame" x="0.0" y="344" width="390" height="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="pN0-cA-Sc2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="EsJ-uv-FX6" firstAttribute="top" secondItem="tXY-xk-G8z" secondAttribute="bottom" constant="10" id="ge1-oI-6HU"/>
+                            <constraint firstItem="RfA-KX-54j" firstAttribute="top" secondItem="EsJ-uv-FX6" secondAttribute="bottom" constant="180" id="h6q-fd-0zU"/>
+                            <constraint firstItem="tXY-xk-G8z" firstAttribute="leading" secondItem="hFw-nI-0cs" secondAttribute="leading" id="lnI-KB-wGJ"/>
+                            <constraint firstItem="hBC-Tc-gtX" firstAttribute="centerX" secondItem="hFw-nI-0cs" secondAttribute="centerX" constant="50" id="o6c-Iv-DZV"/>
+                            <constraint firstItem="hBC-Tc-gtX" firstAttribute="top" secondItem="L07-Sg-Jbf" secondAttribute="bottom" constant="20" id="t7U-dX-S4N"/>
+                            <constraint firstAttribute="trailing" secondItem="tXY-xk-G8z" secondAttribute="trailing" constant="-15" id="tVp-D3-RgT"/>
+                            <constraint firstAttribute="trailing" secondItem="EsJ-uv-FX6" secondAttribute="trailing" constant="20" id="yje-yz-FEq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="超出superView能点击么" id="cWn-pf-oRh"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="boBackView" destination="hBC-Tc-gtX" id="wyh-lR-nOg"/>
+                        <outlet property="outsideBackView" destination="EsJ-uv-FX6" id="Wgj-gj-45S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TDg-Wm-yVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1266.5" y="1132.5"/>
         </scene>
         <!--格子背景-->
         <scene sceneID="ZKr-Gi-6IO">
