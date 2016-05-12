@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		042908481CE1B9EB00D5BB78 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042908471CE1B9EB00D5BB78 /* ProgressViewController.m */; };
+		04387E421CE45107009430FE /* RulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04387E3F1CE45107009430FE /* RulerView.m */; };
+		04387E431CE45107009430FE /* ZYRulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04387E411CE45107009430FE /* ZYRulerView.m */; };
+		04387E461CE45343009430FE /* RulerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04387E451CE45343009430FE /* RulerViewController.m */; };
 		04A5D0691CE2C36D0038565E /* OutsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5D0681CE2C36D0038565E /* OutsideViewController.m */; };
 		04A5D06C1CE2C7C00038565E /* OutsideBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5D06B1CE2C7C00038565E /* OutsideBackView.m */; };
 		04D7641B1CDC891E0028FB2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7641A1CDC891E0028FB2D /* main.m */; };
@@ -46,6 +49,12 @@
 /* Begin PBXFileReference section */
 		042908461CE1B9EB00D5BB78 /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
 		042908471CE1B9EB00D5BB78 /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
+		04387E3E1CE45107009430FE /* RulerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RulerView.h; sourceTree = "<group>"; };
+		04387E3F1CE45107009430FE /* RulerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RulerView.m; sourceTree = "<group>"; };
+		04387E401CE45107009430FE /* ZYRulerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYRulerView.h; sourceTree = "<group>"; };
+		04387E411CE45107009430FE /* ZYRulerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYRulerView.m; sourceTree = "<group>"; };
+		04387E441CE45343009430FE /* RulerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RulerViewController.h; sourceTree = "<group>"; };
+		04387E451CE45343009430FE /* RulerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RulerViewController.m; sourceTree = "<group>"; };
 		04A5D0671CE2C36D0038565E /* OutsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutsideViewController.h; sourceTree = "<group>"; };
 		04A5D0681CE2C36D0038565E /* OutsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutsideViewController.m; sourceTree = "<group>"; };
 		04A5D06A1CE2C7C00038565E /* OutsideBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutsideBackView.h; sourceTree = "<group>"; };
@@ -104,6 +113,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04387E3D1CE45107009430FE /* ZYRulerView */ = {
+			isa = PBXGroup;
+			children = (
+				04387E401CE45107009430FE /* ZYRulerView.h */,
+				04387E411CE45107009430FE /* ZYRulerView.m */,
+				04387E3E1CE45107009430FE /* RulerView.h */,
+				04387E3F1CE45107009430FE /* RulerView.m */,
+			);
+			path = ZYRulerView;
+			sourceTree = "<group>";
+		};
 		04D7640D1CDC891E0028FB2D = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +147,7 @@
 		04D764181CDC891E0028FB2D /* 小技巧测试 */ = {
 			isa = PBXGroup;
 			children = (
+				04387E3D1CE45107009430FE /* ZYRulerView */,
 				04FD0EC41CDC8DCB0099E9B7 /* BOBackView */,
 				04FD0EC71CDC8DCB0099E9B7 /* ZYCircleProgressView */,
 				04FD0ECA1CDC8DCB0099E9B7 /* ZYCurveView */,
@@ -140,6 +161,8 @@
 				042908471CE1B9EB00D5BB78 /* ProgressViewController.m */,
 				04A5D0671CE2C36D0038565E /* OutsideViewController.h */,
 				04A5D0681CE2C36D0038565E /* OutsideViewController.m */,
+				04387E441CE45343009430FE /* RulerViewController.h */,
+				04387E451CE45343009430FE /* RulerViewController.m */,
 				04D764221CDC891E0028FB2D /* Main.storyboard */,
 				04D764281CDC891E0028FB2D /* Assets.xcassets */,
 				04D7642A1CDC891E0028FB2D /* LaunchScreen.storyboard */,
@@ -338,8 +361,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D764211CDC891E0028FB2D /* ViewController.m in Sources */,
+				04387E461CE45343009430FE /* RulerViewController.m in Sources */,
 				04A5D06C1CE2C7C00038565E /* OutsideBackView.m in Sources */,
 				04FD0ECF1CDC8DCB0099E9B7 /* BOBackView.m in Sources */,
+				04387E421CE45107009430FE /* RulerView.m in Sources */,
+				04387E431CE45107009430FE /* ZYRulerView.m in Sources */,
 				04A5D0691CE2C36D0038565E /* OutsideViewController.m in Sources */,
 				04FD0ED11CDC8DCB0099E9B7 /* ZYCurveBackView.m in Sources */,
 				04FD0ED21CDC8DCB0099E9B7 /* ZYCurveView.m in Sources */,
