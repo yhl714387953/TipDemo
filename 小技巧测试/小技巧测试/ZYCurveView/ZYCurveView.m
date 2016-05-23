@@ -79,10 +79,14 @@
     self.curveLayer.fillColor = [UIColor clearColor].CGColor;
     self.curveLayer.lineWidth = 2.0f;
     self.curveLayer.lineCap = kCALineCapButt;
-    self.curvePathRef = CGPathCreateMutable();
+    
+    self.bezierPath = [UIBezierPath bezierPath];
+    [self.bezierPath moveToPoint:CGPointMake(self.frame.size.width, self.frame.size.height / 2.0)];
+    self.curveLayer.path = self.bezierPath.CGPath;
 //    设置折线起点视图最右侧
-    CGPathMoveToPoint(self.curvePathRef, NULL, self.frame.size.width, self.frame.size.height / 2.0);
-    self.curveLayer.path = self.curvePathRef;
+//    self.curvePathRef = CGPathCreateMutable();
+//    CGPathMoveToPoint(self.curvePathRef, NULL, self.frame.size.width, self.frame.size.height / 2.0);
+//    self.curveLayer.path = self.curvePathRef;
     [self.layer addSublayer:self.curveLayer];
 }
 
@@ -100,21 +104,28 @@
         if (curveHeight > self.frame.size.height - 1) curveHeight = self.frame.size.height - 1;
         if (curveHeight <= 1) curveHeight = 1;
 
-        CGPathAddLineToPoint(self.curvePathRef, NULL, self.curveLayer.frame.size.width + kCurveStep, self.frame.size.height - curveHeight);
+//        CGPathAddLineToPoint(self.curvePathRef, NULL, self.curveLayer.frame.size.width + kCurveStep, self.frame.size.height - curveHeight);
+//        self.curveLayer.path = self.curvePathRef;//需要重新赋值一次
+        [self.bezierPath addLineToPoint:CGPointMake(self.curveLayer.frame.size.width + kCurveStep, self.frame.size.height - curveHeight)];
+        self.curveLayer.path = self.bezierPath.CGPath;
+        
         NSLog(@"%.1f", curveHeight);
-        self.curveLayer.path = self.curvePathRef;//需要重新赋值一次
+        
         self.curveLayer.frame = CGRectMake(self.curveLayer.frame.origin.x - kCurveStep, 0, self.curveLayer.frame.size.width + kCurveStep, self.frame.size.height);
         
-    }
+    }    
 }
 
 -(void)clear{
     self.curveLayer.frame = self.bounds;
     self.curvePathRef = CGPathCreateMutable();
+    [self.bezierPath removeAllPoints];
+    [self.bezierPath moveToPoint:CGPointMake(self.frame.size.width, self.frame.size.height / 2.0)];
+    self.curveLayer.path = self.bezierPath.CGPath;
     //    设置折线起点视图最右侧
-    CGPathMoveToPoint(self.curvePathRef, NULL, self.frame.size.width, self.frame.size.height / 2.0);
+//    CGPathMoveToPoint(self.curvePathRef, NULL, self.frame.size.width, self.frame.size.height / 2.0);
     
-    self.curveLayer.path = self.curvePathRef;
+//    self.curveLayer.path = self.curvePathRef;
 }
 
 -(void)dealloc{

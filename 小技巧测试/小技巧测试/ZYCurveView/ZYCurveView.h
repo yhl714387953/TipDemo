@@ -14,7 +14,10 @@
 }
 
 @property (nonatomic, strong) CAShapeLayer* curveLayer;
+
+/** 这个创建path的时候在系统为IOS8时，不会显示选用贝塞尔曲线 */
 @property (nonatomic) CGMutablePathRef curvePathRef;
+@property (nonatomic, strong) UIBezierPath* bezierPath;
 
 /**
  *  @brief 最大显示值
