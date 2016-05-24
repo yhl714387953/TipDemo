@@ -87,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TDg-Wm-yVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-925.5" y="1042.5"/>
+            <point key="canvasLocation" x="-1961.5" y="1318.5"/>
         </scene>
         <!--Delegate-->
         <scene sceneID="Ur1-he-KpV">
@@ -139,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WeC-q5-p20" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="660.5" y="1042.5"/>
+            <point key="canvasLocation" x="-375.5" y="1318.5"/>
         </scene>
         <!--格子背景-->
         <scene sceneID="ZKr-Gi-6IO">
@@ -173,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ab-cV-FEh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="255.5" y="1042.5"/>
+            <point key="canvasLocation" x="-780.5" y="1318.5"/>
         </scene>
         <!--小技巧测试-->
         <scene sceneID="voF-Mk-bnb">
@@ -311,6 +311,31 @@
                                             <segue destination="djV-uK-aBi" kind="show" id="713-Jk-UVK"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="axJ-Og-Qfv">
+                                        <rect key="frame" x="0.0" y="319" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="axJ-Og-Qfv" id="NVf-dO-mYY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号格式化" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgY-X0-pSX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fgY-X0-pSX" firstAttribute="leading" secondItem="NVf-dO-mYY" secondAttribute="leading" id="Cec-27-B6d"/>
+                                                <constraint firstAttribute="trailing" secondItem="fgY-X0-pSX" secondAttribute="trailing" id="O6s-TV-VYg"/>
+                                                <constraint firstItem="fgY-X0-pSX" firstAttribute="top" secondItem="NVf-dO-mYY" secondAttribute="top" id="PGQ-XQ-ITG"/>
+                                                <constraint firstAttribute="bottom" secondItem="fgY-X0-pSX" secondAttribute="bottom" id="lsw-Tj-PE5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PFR-kJ-gTC" kind="show" id="zG5-F2-aSU"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -412,7 +437,88 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZV-kw-HcJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-539.5" y="1042.5"/>
+            <point key="canvasLocation" x="-1575.5" y="1318.5"/>
+        </scene>
+        <!--手机号格式化-->
+        <scene sceneID="0CW-gO-1Vb">
+            <objects>
+                <viewController id="PFR-kJ-gTC" customClass="PhoneNumberViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zgP-AV-9qf"/>
+                        <viewControllerLayoutGuide type="bottom" id="124-L8-ZDK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FEY-dE-nm6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Cq-1Q-gob">
+                                <rect key="frame" x="15" y="84" width="345" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3A9-c8-oQK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PFR-kJ-gTC" id="rWa-9c-0po"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKM-eM-xUu">
+                                <rect key="frame" x="137" y="311" width="100" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4pC-i0-fHK"/>
+                                    <constraint firstAttribute="width" constant="100" id="do8-8z-gTR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="去空格"/>
+                                <connections>
+                                    <action selector="clicked:" destination="PFR-kJ-gTC" eventType="touchUpInside" id="gOb-0W-jK0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13312345678" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsX-kw-RLu">
+                                <rect key="frame" x="20" y="229" width="335" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7fx-a4-t0q"/>
+                                    <constraint firstAttribute="width" constant="42" id="lGi-b7-fMV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="lGi-b7-fMV"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="SKM-eM-xUu" firstAttribute="centerX" secondItem="FEY-dE-nm6" secondAttribute="centerX" id="8yU-f5-dUU"/>
+                            <constraint firstAttribute="trailing" secondItem="OsX-kw-RLu" secondAttribute="trailing" constant="20" id="Haw-We-0uA"/>
+                            <constraint firstItem="OsX-kw-RLu" firstAttribute="centerX" secondItem="FEY-dE-nm6" secondAttribute="centerX" id="Lhh-XB-2O5"/>
+                            <constraint firstAttribute="trailing" secondItem="0Cq-1Q-gob" secondAttribute="trailing" constant="15" id="VAk-mF-OS9"/>
+                            <constraint firstItem="0Cq-1Q-gob" firstAttribute="top" secondItem="zgP-AV-9qf" secondAttribute="bottom" constant="20" id="fuM-Mr-77b"/>
+                            <constraint firstItem="OsX-kw-RLu" firstAttribute="leading" secondItem="FEY-dE-nm6" secondAttribute="leading" constant="20" id="mUp-wY-a0I"/>
+                            <constraint firstItem="OsX-kw-RLu" firstAttribute="top" secondItem="0Cq-1Q-gob" secondAttribute="bottom" constant="115" id="oU0-GM-Wjh"/>
+                            <constraint firstItem="SKM-eM-xUu" firstAttribute="centerY" secondItem="FEY-dE-nm6" secondAttribute="centerY" id="ubI-QJ-fz2"/>
+                            <constraint firstItem="0Cq-1Q-gob" firstAttribute="leading" secondItem="FEY-dE-nm6" secondAttribute="leading" constant="15" id="xu1-GI-Bxw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Lhh-XB-2O5"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="手机号格式化" id="ljv-My-6Kc"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="numberLabel" destination="OsX-kw-RLu" id="FFX-PW-3uV"/>
+                        <outlet property="textField" destination="0Cq-1Q-gob" id="9uv-IP-pQ0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ab-ON-gEf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="17.5" y="1318.5"/>
         </scene>
         <!--动态曲线-->
         <scene sceneID="hSq-f9-ejE">
@@ -480,7 +586,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7N-xh-iaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-145.5" y="1042.5"/>
+            <point key="canvasLocation" x="-1181.5" y="1318.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hne-DE-OC2">

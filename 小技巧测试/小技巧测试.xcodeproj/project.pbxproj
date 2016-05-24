@@ -22,6 +22,7 @@
 		04D7642C1CDC891E0028FB2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D7642A1CDC891E0028FB2D /* LaunchScreen.storyboard */; };
 		04D764371CDC891E0028FB2D /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D764361CDC891E0028FB2D /* _____Tests.m */; };
 		04D764421CDC891E0028FB2D /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D764411CDC891E0028FB2D /* _____UITests.m */; };
+		04EB8D991CF4037600F9E91B /* PhoneNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EB8D981CF4037600F9E91B /* PhoneNumberViewController.m */; };
 		04FD0ECF1CDC8DCB0099E9B7 /* BOBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD0EC61CDC8DCB0099E9B7 /* BOBackView.m */; };
 		04FD0ED01CDC8DCB0099E9B7 /* ZYCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD0EC91CDC8DCB0099E9B7 /* ZYCircleProgressView.m */; };
 		04FD0ED11CDC8DCB0099E9B7 /* ZYCurveBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD0ECC1CDC8DCB0099E9B7 /* ZYCurveBackView.m */; };
@@ -76,6 +77,8 @@
 		04D7643D1CDC891E0028FB2D /* 小技巧测试UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "小技巧测试UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D764411CDC891E0028FB2D /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		04D764431CDC891E0028FB2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04EB8D971CF4037600F9E91B /* PhoneNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneNumberViewController.h; sourceTree = "<group>"; };
+		04EB8D981CF4037600F9E91B /* PhoneNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneNumberViewController.m; sourceTree = "<group>"; };
 		04FD0EC51CDC8DCB0099E9B7 /* BOBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOBackView.h; sourceTree = "<group>"; };
 		04FD0EC61CDC8DCB0099E9B7 /* BOBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOBackView.m; sourceTree = "<group>"; };
 		04FD0EC81CDC8DCB0099E9B7 /* ZYCircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCircleProgressView.h; sourceTree = "<group>"; };
@@ -163,6 +166,8 @@
 				04A5D0681CE2C36D0038565E /* OutsideViewController.m */,
 				04387E441CE45343009430FE /* RulerViewController.h */,
 				04387E451CE45343009430FE /* RulerViewController.m */,
+				04EB8D971CF4037600F9E91B /* PhoneNumberViewController.h */,
+				04EB8D981CF4037600F9E91B /* PhoneNumberViewController.m */,
 				04D764221CDC891E0028FB2D /* Main.storyboard */,
 				04D764281CDC891E0028FB2D /* Assets.xcassets */,
 				04D7642A1CDC891E0028FB2D /* LaunchScreen.storyboard */,
@@ -368,6 +373,7 @@
 				04387E431CE45107009430FE /* ZYRulerView.m in Sources */,
 				04A5D0691CE2C36D0038565E /* OutsideViewController.m in Sources */,
 				04FD0ED11CDC8DCB0099E9B7 /* ZYCurveBackView.m in Sources */,
+				04EB8D991CF4037600F9E91B /* PhoneNumberViewController.m in Sources */,
 				04FD0ED21CDC8DCB0099E9B7 /* ZYCurveView.m in Sources */,
 				04FD0ED01CDC8DCB0099E9B7 /* ZYCircleProgressView.m in Sources */,
 				042908481CE1B9EB00D5BB78 /* ProgressViewController.m in Sources */,
